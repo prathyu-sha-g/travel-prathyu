@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(211, 242, 253);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(78, 157, 163);
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: rgb(53, 126, 133);
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .illustration {
+            width: 400px;
+           
+        }
+        h1 {
+            color: #ff6b6b;
+            font-size: 24px;
+        }
+        
+        
+        input[type="text"], input[type="email"], input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .checkbox-group {
+           
+            align-items: center;
+           
+        }
+        button {
+            padding: 10px;
+            background-color: #ff6b6b;
+            color: white;
+           
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(255, 75, 75);
+        }
+        .login-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <nav>
+       
+        <a href="Home.html">Home</a>
+        <a href="Contactus.html">Contact Us</a>
+        <a href="destination.html">Destination</a>
+        <a href="registration.html">Registration</a>
+    </nav>
+
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltOoRNN3JDi1_yH2OAIaF0K-EeAkR8fByjw&s" class="illustration">
+        <h1>Welcome!</h1>
+        <p>Sign-up to continue</p>
+        <form>
+        <div>   <input type="text" placeholder="Name" required></div><br>
+        <div> <input type="email" placeholder="E-mail" required></div><br>
+        <div><input type="password" placeholder="Password" required></div><br>
+        <div> <input type="password" placeholder="Repeat Password" required></div><br>
+            <div class="checkbox-group">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="#">Login</a></p>
+    </div>
+    </div>
+</body>
+</html>

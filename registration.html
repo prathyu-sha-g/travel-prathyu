@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Booking Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;    
+}
+    nav {
+         display: flex;
+          justify-content: center;
+          background-color: #4e9da3;    
+}
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      font-weight: bold;
+}
+    nav a:hover {
+      background-color: rgb(53, 126, 133);
+}
+    .container {
+      width: 500px;
+      background:white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+    }
+
+    .form-section {
+      padding: 20px;
+      width: 50%;
+    }
+    .form-section h1 {
+      color: rgb(93, 109, 177);
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .form-section p {
+      color: rgb(102, 102, 102);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-size: 12px;
+      color: rgb(56, 56, 56);
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+     input[type="date"],
+     input[type="email"],
+    p input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid rgb(154, 152, 152);
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .radio-group label {
+      font-size: 14px;
+      color: rgb(51, 51, 51);
+    }
+
+    .counter-group {
+      display: flex;
+      gap: 50px;
+    }
+
+    .counter-group div {
+      display: flex;
+      width: 50px;
+    }
+
+    .counter-group input {
+      width: 40px;
+      text-align: center;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color:green;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+  </style>
+</head>
+<body>
+  <div>
+    <nav>
+       
+        <a href="Home.html">Home</a>
+        <a href="Contactus.html">Contact Us</a>
+        <a href="destination.html">Destination</a>
+        <a href="registration.html">Registration</a>
+    </nav>
+  <div class="container">
+    <div class="form-section">
+      <h1>Book a trip</h1>
+      <p>Amazing stuff waiting for you and your friends / family! You're just one step away from a new adventure:</p>
+      <form>
+        <div class="form-group">
+          <label>Check-in</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Check-out</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label>E-mail Address</label>
+          <input type="email" placeholder="Enter your E-mail address">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="Enter your phone number">
+        </div>
+        <div class="radio-group">
+          <label><input type="radio" name="booking" checked> Leisure</label>
+          <label><input type="radio" name="booking"> Business</label>
+        </div>
+        <div class="counter-group">
+          <div>
+            <label>Adults</label>
+            <input type="number" min="1" value="1">
+          </div>
+          <div>
+            <label>Kids</label>
+            <input type="number" min="0" value="1">
+          </div>
+          <div>
+            <label>No. of Rooms</label>
+            <input type="number" min="1" value="2">
+          </div>
+        </div>
+        <br><button type="submit" class="submit-btn">Complete your booking</button>
+      </form>
+    </div>
+    <div class="image-section"></div>
+  </div>
+</div>
+</body>
+</html>

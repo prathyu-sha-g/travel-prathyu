@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <style>
+       
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+
+        }
+
+        
+        header {
+            background-color: rgb(78, 157, 163);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+      
+        nav {
+            display: flex;
+           justify-content: center;
+            background-color: rgb(78, 157, 163);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #357e85;
+        }
+
+        .main{
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main h2 {
+            font-size: 3em;
+            color: rgb(51, 51, 51);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: rgb(102, 102, 102);
+        }
+
+        .search-box {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .search-box input[type="text"],
+        .search-box input[type="date"] {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid rgb(106, 106, 106);
+            border-radius: 4px;
+        }
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .service-card {
+            display: inline-block;
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            background-color: rgb(206, 233, 238);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .destinations {
+
+            padding: 40px;
+            background-color: rgb(227, 250, 255);
+        }
+        .destinations h3 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .destination-card {
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+        }
+        .destination-card img {
+            gap: 70px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px; 
+        }
+        /*.offers {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .offers h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .offer-card {
+            display: inline-block;
+            width: 250px;
+            margin: 10px;
+            background-color:white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }*/
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>Travel Website</h1>
+    </header>
+
+    
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="destination.html">Destination</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="registration.html">Registration</a>
+    </nav>
+
+ 
+    <section class="main">
+        <h2>Let's Enjoy Your Trip </h2>
+        <p>Find the best destinations and experiences</p>
+        <div class="search-box">
+            <input type="text" placeholder="Destination">
+            <input type="date" placeholder="Check-in Date">
+            <input type="date" placeholder="Check-out Date">
+            <input type="submit" value="Search">
+        </div>
+    </section>
+
+    <section class="services">
+        <h3>Our Services</h3>
+        <div class="service-card">
+            <h4>Hotel & Stay</h4>
+            <p>Comfortable accommodations with excellent amenities.</p>
+        </div>
+        <div class="service-card">
+            <h4>Easy to Connect</h4>
+            <p>Seamless travel arrangements and support.</p>
+        </div>
+        <div class="service-card">
+            <h4>Restaurants & Cafes</h4>
+            <p>Discover great places to eat and drink.</p>
+        </div>
+    </section>
+
+  
+    <section class="destinations">
+        <h3>Popular Destinations</h3>
+        <div class="destination-card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.E3PPsxjqt3N4DOy51yERUgHaE7&pid=Api&P=0&h=180" alt="Paris">
+            <h4>Paris</h4>
+        </div>
+        <div class="destination-card">
+            <img src="http://www.hdwallpaperslife.com/wp-content/uploads/2018/07/manhattan_skyline_new_york_city.jpg" alt="New York">
+            <h4>New York</h4>
+        </div>
+        <div class="destination-card">
+            <img src="https://s.yimg.com/ny/api/res/1.2/jvkzkQLZ51wXmHswNTiktg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2021-07/59a4bc60-f23c-11eb-bf75-c38993010fb7" alt="Tokyo">
+            <h4>Tokyo</h4>
+        </div>
+        </div>
+        <div class="destination-card">
+            <img src="https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg" alt="Indonesia">
+            <h4>Indonesia</h4> 
+        </div>
+        <div class="destination-card">
+           <img src="https://doctorsa.com/wp-content/uploads/2024/07/barcelona-spain-1024x683.jpg">
+        <h4>Spain</h4>
+    </div>
+    
+    </section>
+
+  
+   
+    <!--<section class="offers">
+        <h3>Special Offers & Discounts</h3>
+        <div class="offer-card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.E3PPsxjqt3N4DOy51yERUgHaE7&pid=Api&P=0&h=180"" alt="Offer Image">
+            <h4>Paris - 20% Off</h4>
+            <p>Book now and enjoy exclusive discounts on Paris tours!</p>
+        </div>
+        <div class="offer-card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.gXQ-EwJcU18mAEUS_3eNqwHaEb&pid=Api&P=0&h=180" alt="Offer Image">
+            <h4>New York - 15% Off</h4>
+            <p>Special offer on New York packages for a limited time!</p>
+        </div>
+
+    </section>-->
+
+</body>
+</html>
